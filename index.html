@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lá Chắn Số - Nền Tảng Nhận Thức Lừa Đảo Trực Tuyến</title>
+    <title>🛡️ Lá Chắn Số - Nền Tảng Nhận Thức Lừa Đảo Trực Tuyến</title>
     
+    <!-- Favicon (Biểu tượng trang web trên Tab trình duyệt) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    
+    <!-- Apple Touch Icon (Biểu tượng App khi lưu ra màn hình chính iPhone/iPad) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230ea5e9'/%3E%3Ctext x='50' y='54' font-size='50' text-anchor='middle' dominant-baseline='middle'%3E🛡️%3C/text%3E%3C/svg%3E">
+
     <!-- Meta tags for Add to Home Screen (iOS & Android) -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Lá Chắn Số">
-    <link rel="manifest" href='data:application/manifest+json,{"name":"Lá Chắn Số","short_name":"Lá Chắn Số","start_url":".","display":"standalone","background_color":"#f8fafc","theme_color":"#0ea5e9"}'>
+    
+    <!-- Web App Manifest (Cập nhật mảng "icons" cho Android để hiển thị biểu tượng App) -->
+    <link rel="manifest" href='data:application/manifest+json,{"name":"Lá Chắn Số","short_name":"Lá Chắn Số","start_url":".","display":"standalone","background_color":"#f8fafc","theme_color":"#0ea5e9","icons":[{"src":"data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"%3E%3Crect width=\"100\" height=\"100\" rx=\"20\" fill=\"%230ea5e9\"/%3E%3Ctext x=\"50\" y=\"54\" font-size=\"50\" text-anchor=\"middle\" dominant-baseline=\"middle\"%3E🛡️%3C/text%3E%3C/svg%3E","sizes":"192x192 512x512","type":"image/svg+xml","purpose":"any maskable"}]}'>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -114,11 +122,13 @@
                     <span class="text-2xl font-bold text-brand-600">&#128272;</span>
                     <span class="font-bold text-xl tracking-tight text-slate-800">Lá Chắn Số</span>
                 </div>
+                
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#tong-quan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Tổng Quan</a>
-                    <a href="#thu-doan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Nhận Diện</a>
-                    <a href="#phong-ve" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Phòng Vệ</a>
-                    <a href="#bao-cao" class="text-slate-600 hover:text-alert-600 font-medium transition-colors">Trình Báo Khẩn Cấp</a>
+                    <a href="#tong-quan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors flex items-center gap-1.5"><span class="text-lg">&#128202;</span> Tổng Quan</a>
+                    <a href="#thu-doan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors flex items-center gap-1.5"><span class="text-lg">&#128269;</span> Nhận Diện</a>
+                    <a href="#phong-ve" class="text-slate-600 hover:text-brand-600 font-medium transition-colors flex items-center gap-1.5"><span class="text-lg">&#128304;</span> Phòng Vệ</a>
+                    <a href="#bao-cao" class="text-alert-600 hover:text-alert-700 font-medium transition-colors flex items-center gap-1.5"><span class="text-lg">&#128680;</span> Trình Báo</a>
                 </div>
                 <div class="md:hidden">
                     <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-600 focus:outline-none">
@@ -127,13 +137,14 @@
                 </div>
             </div>
         </div>
+        
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
-                <a href="#tong-quan" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50">Tổng Quan</a>
-                <a href="#thu-doan" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50">Nhận Diện</a>
-                <a href="#phong-ve" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50">Phòng Vệ</a>
-                <a href="#bao-cao" class="block px-3 py-2 rounded-md text-base font-medium text-alert-700 hover:text-alert-800 hover:bg-alert-50">Trình Báo Khẩn Cấp</a>
+                <a href="#tong-quan" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 flex items-center gap-2"><span>&#128202;</span> Tổng Quan</a>
+                <a href="#thu-doan" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 flex items-center gap-2"><span>&#128269;</span> Nhận Diện</a>
+                <a href="#phong-ve" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 flex items-center gap-2"><span>&#128304;</span> Phòng Vệ</a>
+                <a href="#bao-cao" class="block px-3 py-2 rounded-md text-base font-medium text-alert-700 hover:text-alert-800 hover:bg-alert-50 flex items-center gap-2"><span>&#128680;</span> Trình Báo Khẩn Cấp</a>
             </div>
         </div>
     </nav>
@@ -149,12 +160,14 @@
         <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-600 mb-10">
             Trang bị kiến thức là vũ khí tốt nhất để bảo vệ tài sản và thông tin cá nhân của bạn trên không gian mạng. Khám phá số liệu và nhận diện thủ đoạn mới nhất.
         </p>
+        
+        <!-- Nút bấm Hero Section -->
         <div class="flex justify-center gap-4 flex-wrap">
-            <a href="#thu-doan" class="px-8 py-3 rounded-lg bg-brand-600 text-white font-semibold hover:bg-brand-700 transition-colors shadow-lg shadow-brand-500/30">
-                Nhận diện lừa đảo
+            <a href="#thu-doan" class="px-8 py-3 rounded-lg bg-brand-600 text-white font-semibold hover:bg-brand-700 transition-colors shadow-lg shadow-brand-500/30 flex items-center gap-2">
+                <span class="text-xl">&#128065;</span> Nhận diện lừa đảo
             </a>
-            <a href="#bao-cao" class="px-8 py-3 rounded-lg bg-alert-600 text-white font-semibold hover:bg-alert-700 transition-colors shadow-lg shadow-alert-500/30">
-                Xử lý khẩn cấp
+            <a href="#bao-cao" class="px-8 py-3 rounded-lg bg-alert-600 text-white font-semibold hover:bg-alert-700 transition-colors shadow-lg shadow-alert-500/30 flex items-center gap-2">
+                <span class="text-xl">&#128680;</span> Xử lý khẩn cấp
             </a>
         </div>
     </section>
@@ -305,7 +318,7 @@
             </div>
 
             <!-- Công cụ bảo mật 2025 -->
-            <div class="mt-12 bg-white rounded-2xl p-8 border border-slate-200 shadow-xl">
+            <div class="mt-12 bg-white rounded-2xl p-8 border border-slate-200 shadow-xl text-slate-900">
                 <div class="text-center mb-8">
                     <h3 class="text-2xl font-bold text-slate-900">Thói Quen & Công Cụ Bảo Mật (2025)</h3>
                     <p class="text-slate-600 mt-2">Nâng cao lớp phòng thủ kỹ thuật cho các tài khoản của bạn theo chuẩn mới nhất</p>
@@ -445,7 +458,7 @@
                         <span class="text-xl text-brand-500">&#128272;</span>
                         <span class="font-bold text-lg text-white">Lá Chắn Số</span>
                     </div>
-                    <p class="text-sm">&copy; 2025 Dự án nâng cao nhận thức an toàn thông tin.</p>
+                    <p class="text-sm">&copy; 2026 Dự án nâng cao nhận thức an toàn thông tin.</p>
                 </div>
                 <div class="text-center md:text-right text-xs text-slate-500 max-w-sm">
                     <p>Thông tin mang tính giáo dục cộng đồng. Luôn tuân thủ hướng dẫn từ cơ quan chức năng nhà nước.</p>
@@ -886,9 +899,9 @@
             const chatMessages = document.getElementById('chat-messages');
 
             // --- QUAN TRỌNG CHO GITHUB ---
-            // Nếu chạy trên môi trường được cấp phép, biến này sẽ được tự động điền.
-            // Nếu bạn tự host trên GitHub, BẠN CẦN LẤY API KEY TỪ GOOGLE AI STUDIO VÀ ĐIỀN VÀO ĐÂY.
-            const apiKey = "AIzaSyCfwViUsdvAMd2UemxxqKsA9_BnvkrD1mM"; 
+            // NẾU BẠN MUỐN CHATBOT HOẠT ĐỘNG THỰC TẾ, HÃY ĐIỀN API KEY VÀO ĐÂY
+            // Lấy miễn phí tại: aistudio.google.com
+            const apiKey = ""; 
             
             const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
             const systemInstruction = `Bạn là Trợ lý AI Cứu hộ an ninh mạng dự án "Lá Chắn Số". Phân tích mô tả người dùng, trấn an và đưa ra CÁCH XỬ LÝ KHẨN CẤP ngắn gọn dạng gạch đầu dòng (khóa thẻ, gọi 156, báo công an). Ngắn gọn dưới 100 chữ.`;
@@ -948,7 +961,7 @@
                 if (!apiKey || apiKey.trim() === "") {
                     setTimeout(() => {
                         removeTypingIndicator();
-                        addMessageToUI("⚠️ **Thiếu API Key:** Trợ lý AI đang chạy trên môi trường tĩnh (GitHub Pages) và chưa được cấu hình API Key.\n\n👉 Để chat hoạt động, bạn cần tạo khóa miễn phí tại *aistudio.google.com* và điền vào biến `apiKey` trong mã nguồn.\n\n📞 Tạm thời nếu khẩn cấp, hãy gọi ngay **156** hoặc **113**.", false);
+                        addMessageToUI("⚠️ **Thiếu API Key:** Trợ lý AI đang chạy trên môi trường tĩnh (GitHub Pages) và chưa được cấu hình API Key.\n\n👉 Để chat hoạt động, bạn cần tạo khóa miễn phí tại *aistudio.google.com* và điền vào biến `apiKey` trong mã nguồn (khoảng dòng 640).\n\n📞 Tạm thời nếu khẩn cấp, hãy gọi ngay **156** hoặc **113**.", false);
                         chatInput.disabled = false;
                         chatSendBtn.disabled = false;
                     }, 1000);
