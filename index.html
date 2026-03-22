@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🛡️ Lá Chắn Số - Nền Tảng Nhận Thức Lừa Đảo Trực Tuyến</title>
     
-    <!-- Favicon & App Icons (Vector Base64) -->
+    <!-- Favicon & App Icons -->
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNNTAgNSBMMjAgMTUgVjQ1IEMyMCA3MCA1MCA5MCA1MCA5MCBDNTAgOTAgODAgNzAgODAgNDUgVjE1IFoiIGZpbGw9IiMwZWE1ZTkiLz48L3N2Zz4=">
     <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIyIiBmaWxsPSIjMGVhNWU5Ii8+PHBhdGggZD0iTTUwIDE1IEwyMCAyNSBWNDUgQzIwIDcwIDUwIDg1IDUwIDg1IEM1MCA4NSA4MCA3MCA4MCA0NSBWMjUgWiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -13,11 +13,9 @@
     <meta name="apple-mobile-web-app-title" content="Lá Chắn Số">
     <link rel="manifest" href='data:application/manifest+json,{"name":"Lá Chắn Số","short_name":"Lá Chắn Số","start_url":".","display":"standalone","background_color":"#f8fafc","theme_color":"#0ea5e9","icons":[{"src":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIyIiBmaWxsPSIjMGVhNWU5Ii8+PHBhdGggZD0iTTUwIDE1IEwyMCAyNSBWNDUgQzIwIDcwIDUwIDg1IDUwIDg1IEM1MCA4NSA4MCA3MCA4MCA0NSBWMjUgWiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=","sizes":"192x192 512x512","type":"image/svg+xml","purpose":"any maskable"}]}'>
     
-    <!-- Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -48,11 +46,6 @@
         @keyframes typing { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
-
-    <!-- Chosen Palette: Warm Neutrals (Slate) for background, Sky Blue for trust/primary, Red for alerts/warnings. -->
-    <!-- Application Structure Plan: Hero Section -> Data Dashboard -> Interactive Typology Explorer (Master-Detail) -> Defense Playbook -> Emergency Contacts -> AI Chatbot. -->
-    <!-- Visualization & Content Choices: Trend (Line Chart), Demographics (Doughnut Chart), Scam List (Interactive Grid). -->
-    <!-- CONFIRMATION: NO SVG graphics used (except vector base64 for manifest). NO Mermaid JS used. -->
 </head>
 <body class="antialiased">
 
@@ -162,7 +155,6 @@
                 <p class="text-lg text-brand-100 max-w-2xl mx-auto">Ghi nhớ những nguyên tắc cốt lõi này như một phản xạ tự nhiên mỗi khi tham gia không gian mạng.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- 3 KHÔNG -->
                 <div class="bg-brand-800 rounded-2xl p-8 border border-brand-700 shadow-lg">
                     <div class="flex items-center gap-3 mb-6 border-b border-brand-600 pb-4">
                         <span class="text-4xl text-alert-400">&#10060;</span>
@@ -174,7 +166,6 @@
                         <li class="flex gap-4"><span class="text-brand-300 text-xl mt-1">&#10145;</span><div><strong class="block text-lg text-white mb-1">KHÔNG chuyển tiền ngay</strong><p class="text-brand-100 text-sm">Chưa xác minh danh tính người nhận bằng cách gọi điện thoại thoại (SIM viễn thông) thì tuyệt đối không chuyển khoản.</p></div></li>
                     </ul>
                 </div>
-                <!-- 3 CHẬM -->
                 <div class="bg-brand-800 rounded-2xl p-8 border border-brand-700 shadow-lg">
                      <div class="flex items-center gap-3 mb-6 border-b border-brand-600 pb-4">
                         <span class="text-4xl text-yellow-400">&#9208;</span>
@@ -187,8 +178,6 @@
                     </ul>
                 </div>
             </div>
-            
-            <!-- Tech Habits 2026 -->
             <div class="mt-12 bg-white rounded-2xl p-8 border border-slate-200 shadow-xl text-slate-900">
                 <div class="text-center mb-8">
                     <h3 class="text-2xl font-bold text-slate-900">Thói Quen Công Nghệ Thiết Yếu</h3>
@@ -470,28 +459,28 @@
                 },
                 'recover_money': { 
                     title: '9. Dịch Vụ "Lấy Lại Tiền Đã Bị Lừa"', icon: '&#128119;', 
-                    description: 'Lợi dụng tâm lý muốn vớt vát tài sản của những người vừa mới bị lừa đảo (tuyển CTV, đầu tư). Đánh trực diện vào sự tuyệt vọng của nạn nhân.', 
-                    mechanism: ['Chạy quảng cáo Facebook giả danh "Luật sư an ninh mạng", "Cục C50 hỗ trợ thu hồi vốn".', 'Yêu cầu nạn nhân gửi biên lai đã bị lừa để "kiểm tra hệ thống".', 'Báo tin vui là "tiền vẫn còn treo", nhưng yêu cầu nạn nhân phải nộp "Phí bôi trơn", "Phí thuê hacker", "Phí bảo lãnh" để rút tiền về.', 'Tiếp tục lừa vét sạch những đồng tiền cuối cùng của nạn nhân.'], 
+                    description: 'Lợi dụng tâm lý muốn vớt vát tài sản của những người vừa mới bị lừa đảo. Đánh trực diện vào sự tuyệt vọng của nạn nhân.', 
+                    mechanism: ['Chạy quảng cáo Facebook giả danh "Luật sư an ninh mạng", "Cục C50 hỗ trợ thu hồi vốn".', 'Yêu cầu nạn nhân gửi biên lai đã bị lừa để "kiểm tra hệ thống".', 'Báo tin vui là "tiền vẫn còn treo", nhưng yêu cầu nạn nhân phải nộp "Phí bôi trơn", "Phí thuê hacker" để rút tiền về.', 'Tiếp tục lừa vét sạch những đồng tiền cuối cùng của nạn nhân.'], 
                     redFlags: ['Cam kết lấy lại tiền 100% cực kỳ dễ dàng.', 'Bắt đóng thêm bất kỳ loại phí nào trước khi tiền về tay.'], 
                     prevention: ['Sự thật phũ phàng: Tiền đã chuyển cho lừa đảo qua mạng thường bị tẩu tán ra nước ngoài, tỷ lệ lấy lại cực thấp.', 'Cơ quan Công an thật KHÔNG BAO GIỜ thu phí giải quyết án, và không làm việc qua Fanpage quảng cáo.'] 
                 },
                 'romance': { 
                     title: '10. Bẫy Tình Cảm & Quà Ngoại Giao', icon: '&#128148;', 
-                    description: 'Lừa đảo qua mạng xã hội, nhắm vào những người độc thân, phụ nữ nhẹ dạ. Tạo profile hoành tráng (Lính Mỹ đóng quân tại Syria, Bác sĩ Liên Hợp Quốc, Kỹ sư dầu khí).', 
-                    mechanism: ['Kiên nhẫn nhắn tin trò chuyện hàng tháng trời, gọi nhau là "vợ - chồng", vẽ ra tương lai mua nhà tại Việt Nam.', 'Lấy lý do được thưởng một vali chứa hàng triệu USD, vàng thỏi, trang sức nhưng đang ở chiến trường không giữ được, nhờ "vợ" ở VN giữ hộ.', 'Vài ngày sau, một người xưng là "Hải quan sân bay" gọi điện báo lô hàng bị giữ lại, bắt đóng thuế, tiền phạt (từ vài chục đến hàng trăm triệu) vào một tài khoản cá nhân.'], 
+                    description: 'Lừa đảo qua mạng xã hội, nhắm vào những người độc thân, phụ nữ nhẹ dạ. Tạo profile hoành tráng (Lính Mỹ, Bác sĩ Liên Hợp Quốc).', 
+                    mechanism: ['Kiên nhẫn nhắn tin trò chuyện hàng tháng trời, gọi nhau là "vợ - chồng", vẽ ra tương lai mua nhà tại Việt Nam.', 'Lấy lý do được thưởng một vali chứa hàng triệu USD, vàng thỏi, trang sức nhưng đang ở chiến trường không giữ được, nhờ "vợ" ở VN giữ hộ.', 'Vài ngày sau, một người xưng là "Hải quan sân bay" gọi điện báo lô hàng bị giữ lại, bắt đóng thuế, tiền phạt vào một tài khoản cá nhân.'], 
                     redFlags: ['Luôn tìm lý do (hỏng camera, đang trong khu vực quân sự) để từ chối Video Call rõ mặt.', 'Hải quan, Thuế vụ nhà nước KHÔNG yêu cầu người dân chuyển tiền vào số tài khoản cá nhân.'], 
                     prevention: ['Thức tỉnh: Không ai vừa quen trên mạng chưa từng gặp mặt lại gửi cho bạn hàng chục tỷ đồng.', 'Tuyệt đối không chuyển tiền đóng phí nhận quà, phí hải quan cho người lạ.'] 
                 },
                 'wrong_transfer': { 
                     title: '11. Chiêu Trò Chuyển Nhầm Tiền', icon: '&#128184;', 
-                    description: 'Bạn bất ngờ nhận được một khoản tiền (từ vài trăm đến vài triệu) không rõ nguồn gốc. Vài ngày sau, có người gọi điện khóc lóc báo chuyển nhầm và xin lại.', 
+                    description: 'Bạn bất ngờ nhận được một khoản tiền không rõ nguồn gốc. Vài ngày sau, có người gọi điện khóc lóc báo chuyển nhầm và xin lại.', 
                     mechanism: ['Kịch bản 1: Kẻ gian yêu cầu bạn chuyển trả lại nhưng vào MỘT SỐ TÀI KHOẢN KHÁC (Cấu kết rửa tiền lừa đảo).', 'Kịch bản 2: Sau 1 tháng, kẻ gian dùng ủy nhiệm chi đó làm bằng chứng tố bạn vay nặng lãi qua app, ép trả lãi suất cắt cổ.', 'Kịch bản 3: Gửi cho bạn một đường link lạ, bảo rằng đây là "link tra soát của ngân hàng", yêu cầu bạn đăng nhập để hoàn tiền (thực chất là link lấy cắp mật khẩu).'], 
                     redFlags: ['Yêu cầu chuyển trả vào tài khoản KHÔNG KHỚP với tên người gửi ban đầu.', 'Gửi link web lạ yêu cầu đăng nhập ngân hàng.'], 
                     prevention: ['KHÔNG tự ý chuyển trả lại tiền, không xài số tiền đó.', 'Báo ngay cho ngân hàng của bạn để yêu cầu tra soát. Ngân hàng sẽ là trung gian giải quyết an toàn nhất.'] 
                 },
                 'hack_social': { 
                     title: '12. Hack MXH, Mượn Tiền Bạn Bè', icon: '&#128101;', 
-                    description: 'Hacker chiếm đoạt tài khoản Facebook, Zalo, Tiktok của nạn nhân do nạn nhân lỡ nhấp vào link độc hại hoặc dùng mật khẩu quá yếu.', 
+                    description: 'Hacker chiếm đoạt tài khoản Facebook, Zalo của nạn nhân do nạn nhân lỡ nhấp vào link độc hại hoặc dùng mật khẩu quá yếu.', 
                     mechanism: ['Kẻ gian vào đọc lại lịch sử chat để bắt chước cách xưng hô (mày - tao, anh - em).', 'Nhắn tin đồng loạt cho danh bạ mượn tiền với lý do khẩn cấp: "Đang kẹt trong bệnh viện", "Cần thanh toán tiền hàng gấp".', 'Gửi số tài khoản ngân hàng tên người khác (hoặc trùng tên nhưng khác ngân hàng do mua lại CCCD).'], 
                     redFlags: ['Viện cớ đang họp, hỏng loa để NÉ TRÁNH CÁC CUỘC GỌI THOẠI.', 'Số tài khoản nhận tiền lạ, tên người nhận không khớp với người bạn của mình.'], 
                     prevention: ['Chậm lại 1 nhịp: Luôn nhấc máy GỌI ĐIỆN THOẠI TRUYỀN THỐNG (SIM) để xác nhận khi ai đó mượn tiền qua chat.', 'Bật xác thực 2 lớp (2FA) cho tất cả mạng xã hội để chống hack.'] 
@@ -597,7 +586,7 @@
                     <div class="animate-[fadeIn_0.3s_ease-out]">
                         <div class="flex items-center gap-4 mb-6 border-b border-slate-200 pb-4">
                             <span class="text-4xl bg-slate-100 p-3 rounded-xl">${data.icon}</span>
-                            <h3 class="text-2xl font-bold text-slate-900 leading-tight">${data.title}</h3>
+                            <h3 class="text-2xl font-bold text-slate-900 leading-tight">${data.title.replace(/^[0-9]+\.\s/, '')}</h3>
                         </div>
                         <p class="text-lg text-slate-700 mb-6 bg-slate-100 p-5 rounded-lg border-l-4 border-brand-500 font-medium shadow-sm">
                             ${data.description}
@@ -611,7 +600,7 @@
                             </div>
                             <div class="bg-alert-50 p-5 rounded-xl border border-alert-200 shadow-sm">
                                 <h4 class="text-lg font-bold text-alert-800 mb-4 flex items-center gap-2">
-                                    <span class="text-alert-600">&#128681;</span> Dấu Hiệu Đỏ Nhận Biết
+                                    <span class="text-alert-600">&#128681;</span> Dấu Hiệu Nhận Biết
                                 </h4>
                                 <ul class="space-y-2">${flagsHTML}</ul>
                             </div>
@@ -636,7 +625,7 @@
                     if (data.title.toLowerCase().includes(lowerFilter) || data.description.toLowerCase().includes(lowerFilter) || data.mechanism.join(' ').toLowerCase().includes(lowerFilter)) {
                         const btn = document.createElement('button');
                         btn.className = 'scam-item w-full text-left px-4 py-3 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 hover:border-brand-300 transition-all font-semibold text-slate-700 flex items-center gap-3 shadow-sm text-sm';
-                        btn.innerHTML = `<span class="text-xl">${data.icon}</span> <span class="leading-tight">${data.title.replace(/^[0-9]+\.\s/, '')}</span>`;
+                        btn.innerHTML = `<span class="text-xl">${data.icon}</span> <span class="leading-tight">${data.title}</span>`;
                         btn.addEventListener('click', function() {
                             if (currentActiveButton) currentActiveButton.classList.remove('active', 'border-alert-500');
                             this.classList.add('active', 'border-alert-500');
@@ -696,11 +685,10 @@
             const chatSendBtn = document.getElementById('chat-send-btn');
             const chatMessages = document.getElementById('chat-messages');
 
-            // --- QUAN TRỌNG: ĐIỀN API KEY CỦA BẠN VÀO DƯỚI ĐÂY ---
-            // Lấy miễn phí tại: aistudio.google.com
+            // --- QUAN TRỌNG: API KEY CỦA BẠN ĐÃ ĐƯỢC ĐIỀN ---
             const apiKey = "AIzaSyBBVBhL994VBFFwHv4fJlgeU3R_JxTorHU"; 
             
-            // Dùng gemini-1.5-flash để đảm bảo tương thích mọi tài khoản cá nhân
+            // Sử dụng Model ổn định gemini-1.5-flash để tránh lỗi 404 trên tài khoản thường.
             const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
             const systemInstruction = `Bạn là Trợ lý AI Cứu hộ an ninh mạng dự án "Lá Chắn Số". Phân tích mô tả người dùng, trấn an và đưa ra CÁCH XỬ LÝ KHẨN CẤP ngắn gọn dạng gạch đầu dòng (khóa thẻ, gọi 156, báo công an). Ngắn gọn dưới 100 chữ.`;
             let chatHistory = [];
@@ -740,10 +728,10 @@
                 chatInput.value = ''; chatInput.disabled = true; chatSendBtn.disabled = true;
                 addMessageToUI(text, true); showTypingIndicator();
 
-                if (!apiKey || apiKey.trim() === "AIzaSyBBVBhL994VBFFwHv4fJlgeU3R_JxTorHU") {
+                if (!apiKey || apiKey.trim() === "") {
                     setTimeout(() => {
                         removeTypingIndicator();
-                        addMessageToUI("⚠️ **Thiếu API Key:** Trợ lý AI đang chạy trên môi trường tĩnh và chưa được cấu hình API Key.\n\n👉 Để chat hoạt động, bạn cần tạo khóa miễn phí tại *aistudio.google.com* và điền vào biến `apiKey` trong mã nguồn.\n\n📞 Tạm thời nếu khẩn cấp, hãy gọi ngay **156**.", false);
+                        addMessageToUI("⚠️ **Thiếu API Key:** Bạn chưa điền API Key vào hệ thống.", false);
                         chatInput.disabled = false; chatSendBtn.disabled = false;
                     }, 1000);
                     return;
@@ -755,10 +743,22 @@
                     let aiResponseText = ""; let delay = 1000; let success = false;
                     for (let i = 0; i < 5; i++) {
                         try {
-                            const response = await fetch(geminiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ contents: chatHistory, systemInstruction: { parts: [{ text: systemInstruction }] } }) });
-                            if (!response.ok) throw new Error(`HTTP error!`);
+                            const response = await fetch(geminiUrl, { 
+                                method: 'POST', 
+                                headers: { 'Content-Type': 'application/json' }, 
+                                body: JSON.stringify({ contents: chatHistory, systemInstruction: { parts: [{ text: systemInstruction }] } }) 
+                            });
+                            
+                            if (!response.ok) {
+                                const errData = await response.json();
+                                console.error("Lỗi từ Google API:", errData);
+                                throw new Error(errData.error?.message || `HTTP Error ${response.status}`);
+                            }
+                            
                             const data = await response.json();
-                            aiResponseText = data.candidates[0].content.parts[0].text; success = true; break; 
+                            aiResponseText = data.candidates[0].content.parts[0].text; 
+                            success = true; 
+                            break; 
                         } catch (e) {
                             if (i === 4) throw e;
                             await new Promise(r => setTimeout(r, delay)); delay *= 2;
@@ -772,7 +772,8 @@
                     }
                 } catch (error) {
                     removeTypingIndicator();
-                    addMessageToUI("❌ Lỗi kết nối. Vui lòng kiểm tra lại API Key hoặc gọi ngay 156 để được hỗ trợ.", false);
+                    console.error("Chi tiết lỗi:", error);
+                    addMessageToUI(`❌ Lỗi kết nối AI: ${error.message}. Vui lòng kiểm tra lại quyền của API Key (CORS/Referrer) trên Google Cloud Console.`, false);
                     chatHistory.pop(); 
                 } finally {
                     chatInput.disabled = false; chatSendBtn.disabled = false; chatInput.focus();
