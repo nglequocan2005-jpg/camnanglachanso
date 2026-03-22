@@ -740,7 +740,7 @@
                 chatInput.value = ''; chatInput.disabled = true; chatSendBtn.disabled = true;
                 addMessageToUI(text, true); showTypingIndicator();
 
-                if (!apiKey || apiKey.trim() === "") {
+                if (!apiKey || apiKey.trim() === "AIzaSyBBVBhL994VBFFwHv4fJlgeU3R_JxTorHU") {
                     setTimeout(() => {
                         removeTypingIndicator();
                         addMessageToUI("⚠️ **Thiếu API Key:** Trợ lý AI đang chạy trên môi trường tĩnh và chưa được cấu hình API Key.\n\n👉 Để chat hoạt động, bạn cần tạo khóa miễn phí tại *aistudio.google.com* và điền vào biến `apiKey` trong mã nguồn.\n\n📞 Tạm thời nếu khẩn cấp, hãy gọi ngay **156**.", false);
